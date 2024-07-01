@@ -12,33 +12,28 @@ function Header() {
         <header className="overflow-hidden bg-white border border-gray-800 bg-opacity-30 backdrop-filter backdrop-blur-lg shadow-lg rounded-3xl px-5 p-1 flex items-center justify-between">
           <div className="flex items-center">
             <Link href="/" //style={{ WebkitTextStroke: '0.5px #EF4444', textStroke: '0.5px #EF4444' }} 
-            className="text-gray-800 font-bold text-4xl italic">
+            className="text-gray-900 font-bold text-2xl ">
               easy2u
             </Link>
           </div>
           <nav className="flex-grow flex justify-center items-center gap-8 text-gray-800 font-semibold relative">
-            <Link href="/" className="relative">
-              Home
-              {pathname === '/' && <span className="absolute left-0 bottom-[-12px] w-full h-[2px] bg-red-500"></span>}
-            </Link>
-            <Link href="/about" className="relative">
-              About us
-              {pathname === '/about' && <span className="absolute left-0 bottom-[-12px] w-full h-[2px] bg-red-500"></span>}
-            </Link>
-            <Link href="/product" className="relative">
-              Our Product
-              {pathname === '/product' && <span className="absolute left-0 bottom-[-12px] w-full h-[2px] bg-red-500"></span>}
-            </Link>
-            <Link href="/solutions" className="relative">
-              Market Solutions
-              {pathname === '/solutions' && <span className="absolute left-0 bottom-[-12px] w-full h-[2px] bg-red-500"></span>}
-            </Link>
+          <Link href="/" className={`relative ${pathname === '/' ? 'text-red-900' : ''}`}>
+    Home
+  </Link>
+  <Link href="/about" className={`relative ${pathname === '/about' ? 'text-red-900' : ''}`}>
+    About us
+  </Link>
+  <Link href="/product" className={`relative ${pathname === '/product' ? 'text-red-900' : ''}`}>
+    Our Product
+  </Link>
+  <Link href="/solutions" className={`relative ${pathname.includes('/solutions') ? 'text-red-900' : ''}`}>
+    Market Solutions
+  </Link>
           </nav>
-          <div className="ml-auto">
-            <Link href="/#contact" className="relative">
-              Contact us
-              {pathname === '/#contact' && <span className="absolute left-0 bottom-[-12px] w-full h-[2px] bg-red-500"></span>}
-            </Link>
+          <div className="ml-auto text-gray-800 font-semibold">
+    <Link href="/contact" className={`relative ${pathname === '/contact' ? 'text-red-900' : ''}`}>
+      Contact us
+    </Link>
           </div>
         </header>
       </div>
