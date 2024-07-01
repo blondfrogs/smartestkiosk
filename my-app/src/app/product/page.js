@@ -159,7 +159,7 @@ function Product() {
         <div>
         <Link className='mt-10 mr-6 border-2 border-red-500 px-7 py-5 inline-flex justify-center items-center gap-2 ' href={'/solutions'}>View All Markets <Right/> </Link> 
 
-        <Link className='mt-10 bg-red-500 text-white px-7 py-5 inline-flex justify-center items-center gap-2 ' href={''}>Let's Connect <Right/> </Link> </div>
+        <Link className='mt-10 bg-red-500 text-white px-7 py-5 inline-flex justify-center items-center gap-2 ' href={''}>Let&apos;s Connect <Right/> </Link> </div>
       </section>
     </div>
     </>
