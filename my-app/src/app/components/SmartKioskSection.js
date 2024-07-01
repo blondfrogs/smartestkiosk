@@ -17,7 +17,7 @@ const SmartKioskSection = (props) => {
           </Link>
 
           <Link className='mt-10 bg-red-500 text-white px-7 py-5 inline-flex justify-center items-center gap-2' href={''}>
-            Let's Connect <Right />
+            Let&apos;s Connect <Right />
           </Link>
         </div>
       </section>
