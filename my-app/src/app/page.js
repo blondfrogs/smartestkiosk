@@ -106,11 +106,11 @@ export default function Home() {
       <section className='container mx-auto py-36'>
         <div className='font-semibold tracking-wider text-6xl'>
           <span>Reach out to</span> <br/>
-          <span className='inline-block my-3  font-extrabold  text-red-500'>Smartest Kiosk's</span><br/>
+          <span className='inline-block my-3  font-extrabold  text-red-500'>Smartest Kiosk&apos;s</span><br/>
           <span>Team to get started.</span>
         </div>
         <div>
-        <Link className='mt-10 bg-red-500 px-7 py-5 inline-flex justify-center items-center gap-2 ' href={''}>Let's Connect <Right/> </Link> </div>
+        <Link className='mt-10 bg-red-500 px-7 py-5 inline-flex justify-center items-center gap-2 ' href={''}>Let&apos;s Connect <Right/> </Link> </div>
       </section>
     </div>
     </div>
